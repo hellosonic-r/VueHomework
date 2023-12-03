@@ -65,7 +65,6 @@ export const useMovieStore = defineStore('movie', {
         `https://omdbapi.com?apikey=7035c60c&i=${id}&plot=full`,
       );
       this.movieDetail = await res.json();
-      console.log(this.movieDetail);
     },
   },
 });

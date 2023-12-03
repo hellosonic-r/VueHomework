@@ -12,7 +12,6 @@ const movieDetailStore = useMovieStore();
 async function detailCallback(): Promise<void> {
   if (props.movieId) {
     await movieDetailStore.fetchMovieDetail(props.movieId);
-    console.log('클릭');
   }
 }
 
